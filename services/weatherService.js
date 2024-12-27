@@ -59,21 +59,21 @@ const byCoords = async (req, res) => {
             weatherCode: weatherData.daily.weatherCode[index],
         }));
 
-        console.log(
-            weatherData.current.dayOfWeek,
-            weatherData.current.weatherCode,
-            weatherData.current.temperature2m,
-            weatherData.current.relativeHumidity2m
-        );
+        // console.log(
+        //     weatherData.current.dayOfWeek,
+        //     weatherData.current.weatherCode,
+        //     weatherData.current.temperature2m,
+        //     weatherData.current.relativeHumidity2m
+        // );
 
-        for (let i = 0; i < weatherData.daily.time.length; i++) {
-            console.log(
-                weatherData.daily.time[i],
-                weatherData.daily.weatherCode[i],
-                weatherData.daily.temperature2mMax[i],
-                weatherData.daily.temperature2mMin[i]
-            );
-        }
+        // for (let i = 0; i < weatherData.daily.time.length; i++) {
+        //     console.log(
+        //         weatherData.daily.time[i],
+        //         weatherData.daily.weatherCode[i],
+        //         weatherData.daily.temperature2mMax[i],
+        //         weatherData.daily.temperature2mMin[i]
+        //     );
+        // }
 
         const onloadData = {
             today: weatherData.current,
@@ -151,22 +151,22 @@ const byCity = async (req, res) => {
 
 
 
-        console.log(
-            weatherData.current.dayOfWeek,
-            weatherData.current.temperature2m,
-            weatherData.current.relativeHumidity2m,
-            weatherData.current.weatherCode,
-        );
+        // console.log(
+        //     weatherData.current.dayOfWeek,
+        //     weatherData.current.temperature2m,
+        //     weatherData.current.relativeHumidity2m,
+        //     weatherData.current.weatherCode,
+        // );
 
 
-        for (let i = 0; i < weatherData.daily.time.length; i++) {
-            console.log(
-                weatherData.daily.time[i].getUTCDay(),
-                weatherData.daily.weatherCode[i],
-                weatherData.daily.temperature2mMax[i],
-                weatherData.daily.temperature2mMin[i]
-            );
-        }
+        // for (let i = 0; i < weatherData.daily.time.length; i++) {
+        //     console.log(
+        //         weatherData.daily.time[i].getUTCDay(),
+        //         weatherData.daily.weatherCode[i],
+        //         weatherData.daily.temperature2mMax[i],
+        //         weatherData.daily.temperature2mMin[i]
+        //     );
+        // }
 
         const citynameData = {
             local: weatherData.local,
